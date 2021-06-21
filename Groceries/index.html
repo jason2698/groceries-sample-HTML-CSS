@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="eatfresh.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function stickyMenu(){
+                var sticky=document.getElementById('sticky');
+                if(window.pageYOffset > 220){
+                    sticky.classList.add('sticky');
+                }
+                else{
+                    sticky.classList.remove('sticky');
+                }
+            }
+
+            window.onscroll= function(){
+                stickyMenu();
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="parallax">
+            <div class="page-title">Eat Fresh</div>
+        </div>
+        <div class="menu" id="sticky">
+            <ul class="menu-ul">
+                <a href="#" class="a-menu"><li>Home</li></a>
+                <a href="#deals" class="a-menu"><li>Deals</li></a>
+                <a href="#vegetables" class="a-menu"><li>Vegetables</li></a>
+                <a href="#fruits" class="a-menu"><li>Fruits</li></a>
+                <a href="#meat" class="a-menu"><li>Meat</li></a>
+                <a href="#" class="a-menu"><li>Cart</li></a>
+            </ul>
+            <div class="search-box">
+                <form>
+                    <input type="text" placeholder="Search...." name="search" class="search-input"/>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+<!--Home page begins-->   
+        <div class="container">
+            <a href="#vegetables">
+                <div class="categories">
+                    <img src="images/veg/carrot.jpg" class="item-image"/>
+                    <div class="image-title">Vegetables</div>
+                </div>
+            </a>
+            <a href="#fruits">
+                <div class="categories">
+                    <img src="images/fruits/fresh-apple.jpg" class="item-image"/>
+                    <div class="image-title">Fruits</div>
+                </div>
+            </a>
+            <a href="#meat">
+                <div class="categories">
+                    <img src="images/meat/chicken.jpeg" class="item-image"/>
+                    <div class="image-title">Meat</div>
+                </div>
+            </a>
+            <a href="#deals">
+                <div class="categories">
+                    <img src="images/deals.jpg" class="item-image"/>
+                    <div class="image-title">Deals</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Deals begins here -->
+
+        <div class="deals-container">
+            <div class="parallax">
+                <div class="title">DEALS</div>
+            </div>
+            <div class="deal">
+                Save 20% on min-purchase of 500Rs on Vegetables<br/>
+                <button class="coupon-btn">Add Coupon</button>
+            </div>
+            <div class="deal">
+                Save  10%  on  minimum purchase of 750 Rs on Fruits<br/>
+                <button class="coupon-btn">Add Coupon</button>
+            </div>
+            <div class="deal">
+                Save 15% on min-purchase of 900Rs on Meat/SeaFoods<br/>
+                <button class="coupon-btn">Add Coupon</button>
+            </div>
+        </div>
+        <!-- Deals end here -->
+
+        <!-- Veg begins here -->
+
+        <div class="deals-container" id="vegetables">
+            <div class="parallax">
+                <div class="title">VEGETABLES</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/carrot.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Carrot</b><br/>
+                    <div class="item-select">
+                        Price : RS 50/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/greenpepper.jfif" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Green Pepper</b><br/>
+                    <div class="item-select">
+                        Price : RS 35/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/tomato.webp" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Tomatoes</b><br/>
+                    <div class="item-select">
+                        Price : RS 42/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/yellow-onion.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Yellow Onion</b><br/>
+                    <div class="item-select">
+                        Price : RS 50/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/potato.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Potato</b><br/>
+                    <div class="item-select">
+                        Price : RS 30/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/beetroot.webp" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Betroot</b><br/>
+                    <div class="item-select">
+                        Price : RS 50/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Veg end here -->
+
+        <!-- Fruits begins here -->
+
+        <div class="deals-container" id="fruits">
+            <div class="parallax">
+                <div class="title">FRUITS</div>
+            </div>
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/carrot.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Carrot</b><br/>
+                    <div class="item-select">
+                        Price : RS 50/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/greenpepper.jfif" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Green Pepper</b><br/>
+                    <div class="item-select">
+                        Price : RS 35/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/tomato.webp" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Tomatoes</b><br/>
+                    <div class="item-select">
+                        Price : RS 42/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/yellow-onion.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Yellow Onion</b><br/>
+                    <div class="item-select">
+                        Price : RS 50/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/potato.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Potato</b><br/>
+                    <div class="item-select">
+                        Price : RS 30/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="images/veg/beetroot.webp" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Betroot</b><br/>
+                    <div class="item-select">
+                        Price : RS 50/250grams
+                    </div>
+                    <label>Qty:</label>
+                    <select class="item-select">
+                        <option>250 grams</option>
+                        <option>500 grams</option>
+                        <option>750 grams</option>
+                        <option>1000 grams</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fruits end here -->
+
+
+<!-- Home page ends -->
+</body>
+</html>
